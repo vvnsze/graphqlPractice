@@ -1,2 +1,2 @@
 # Lyrical-GraphQL
-Starter project from a GraphQL course on Udemy.com
+Practice GraphQl through tutorial
