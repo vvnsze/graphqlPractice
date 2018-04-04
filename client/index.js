@@ -7,6 +7,7 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router';
 import ApolloClient from 'apollo-client';
 //Apollo client is agnostic, react-apollo is 'glue'
 import { ApolloProvider } from 'react-apollo';
+import './style/style.css'
 
 import App from './components/App'
 import SongList from './components/SongList';
