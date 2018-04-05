@@ -1,5 +1,4 @@
 //Apollo Provider is glue layer between Apollo Store and React Application
-//
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -12,6 +11,7 @@ import './style/style.css'
 import App from './components/App'
 import SongList from './components/SongList';
 import SongCreate from './components/SongCreate';
+import SongDetail from './components/SongDetail';
 
 const client = new ApolloClient({});
 
@@ -22,6 +22,7 @@ const Root = () => {
         <Route path="/" component={App}>
           <IndexRoute component={SongList} />
           <Route path="songs/new" component={SongCreate} />
+          <Route path="songs/:id" component={SongDetail} />
         </Route>
       </Router>
     </ApolloProvider>
@@ -32,3 +33,5 @@ ReactDOM.render(
   <Root />,
   document.querySelector('#root')
 );
+
+//SongDetail has a parameter id
