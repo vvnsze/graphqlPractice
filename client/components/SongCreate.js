@@ -23,6 +23,7 @@ class SongCreate extends Component {
         }).then(() => hashHistory.push('/'));
     }
 //^refetch on another component (not available through props)
+//makes whole new query to back end so use dataIdFromObject
     render() {
         return (
             <div>
